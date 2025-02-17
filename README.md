@@ -1,12 +1,12 @@
 # Data Warehouse and Analytics Project
 
 
-Introduction
+### Introduction
 This project focuses on building a data warehouse and analytics pipeline for an exhibition event that took place over six months (September 5th – February 11th). The dataset includes visitor count, ticket revenue, and demographics, allowing for deep analysis of customer behavior, peak times, and revenue trends.
 
 The project follows industry best practices in data engineering and analytics, using a Bronze, Silver, and Gold layered architecture in SQL Server. This ensures data integrity, transformation efficiency, and insightful reporting. The final output provides valuable business intelligence to event organizers, helping them optimize operations, marketing strategies, and pricing models for future exhibitions.
 
-Project Objectives
+#### Project Objectives
 1. Data Engineering & Architecture
 ✅ Implement a Bronze-Silver-Gold data warehouse architecture in SQL Server.
 ✅ Ensure data quality and validation through structured ETL processes.
@@ -33,7 +33,7 @@ Project Objectives
 ✅ Follow Git version control for tracking changes in ETL and modeling scripts.
 ✅ Provide a detailed project report summarizing key insights and recommendations.
 
-Tech Stack
+#### Tech Stack
 Database: SQL Server
 ETL: SQL Stored Procedures / Python (Pandas, SQLAlchemy)
 Visualization: Tableau / Power BI

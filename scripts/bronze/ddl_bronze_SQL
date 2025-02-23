@@ -1,3 +1,13 @@
+/* 
+
+====================================================================================
+Create bronze and Schemas
+====================================================================================
+Script Purpose:
+    This script creates a new schema named "bronze" after checking if it already exists.
+    If the schema exists, it is dropped and recreated. Additionally, the script sets up.
+*/
+
 IF OBJECT_ID ('bronze.customers_tut', 'U') IS NOT NULL
     DROP TABLE bronze.customers_tut;
 

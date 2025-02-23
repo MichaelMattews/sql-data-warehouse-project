@@ -1,0 +1,26 @@
+IF OBJECT_ID ('bronze.customers_tut', 'U') IS NOT NULL
+    DROP TABLE bronze.customers_tut;
+
+CREATE TABLE bronze.customers_tut (
+    visit_date NVARCHAR(20),  -- Store as text first to avoid conversion errors
+    visit_time TIME,
+    ticket_type NVARCHAR(100),
+    first_name NVARCHAR(50),
+    last_name NVARCHAR(50),
+    tickets_sold INT NULL,
+    tickets_validated INT NULL
+);
+
+TRUNCATE TABLE bronze.customers_tut;
+
+BULK INSERT bronze.customers_tut
+FROM 'C:\Users\mmoki\OneDrive\Desktop\MattewsDataShit\customer_tut_fixed.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIRSTROW = 2,
+    TABLOCK,
+    CODEPAGE = '65001',
+    KEEPNULLS
+);
+
+SELECT TOP 10 * FROM bronze.customers_tut;
